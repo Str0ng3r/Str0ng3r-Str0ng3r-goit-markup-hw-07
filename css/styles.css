@@ -334,7 +334,9 @@ padding:5px 22px 5px 22px;
     width: 370px;
     height: 404px;
     background-color:#FFFFFF;
-    margin: 15px;
+    margin: 15px; 
+    border-bottom: 1px;
+    border-color: #EEEEEE;
 }
 .projects li>h3 {
     font-family: 'Roboto';
