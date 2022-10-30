@@ -357,3 +357,34 @@ padding:5px 22px 5px 22px;
     color: #757575;
     margin-left:15px;
 }
+.logo-webstudio {
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+color: #000000;
+width: 145px;
+height: 31px;
+padding-left: 215px;
+}
+.logo-webstudio span{
+    color: #2196F3;
+}
+.logo-webstudio-2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    width: 145px;
+    height: 31px;
+    padding-left: 215px;
+    padding-left: 215px;
+}
+.logo-webstudio-2 span{
+    color:#2196F3;
+}
