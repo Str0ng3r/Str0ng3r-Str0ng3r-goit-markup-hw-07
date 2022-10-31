@@ -1,17 +1,18 @@
 html,
-body {background-color: #ECECEC;
-    margin: 0;
-    padding: 0;
+body {
+    background-color: #ECECEC;
+    margin:0;
+    padding:0;
+    font-family: 'Roboto';
+    color: #212121;
 }
 ul { 
-font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
-line-height: 16px;
+line-height: 115%;
 letter-spacing: 0.02em;
-color: 
-#212198;
+color: #212198;
 }
 a {
     text-decoration: none;
@@ -26,7 +27,6 @@ header {
     height: 80px;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -71,6 +71,7 @@ header a{
     align-items: center;
     background-color: #2F303A;
     flex-direction: column;
+    width: 100%;
 }
 .main-button button {
     border-radius: 4px;
@@ -78,20 +79,17 @@ header a{
     width: 216px;
     height: 50px;
     border: 0;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 188%;
     display: flex;
     color: #FFFFFF;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-
 }
 .main-button h1 {
-    font-family: 'Roboto';
 font-style: normal;
 font-weight: 900;
 font-size: 44px;
@@ -106,6 +104,7 @@ height: 760px;
 display: flex;
 align-items: center;
 flex-direction: column;
+width: 100%;
 }
 .about {
     display: flex;
@@ -124,14 +123,13 @@ flex-direction: column;
     justify-content: space-evenly;
     margin-top: 100px;
 }
-.soft>li{
+.soft li{
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 }
 .soft h3 {
     margin: 0;
-    font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 14px;
@@ -139,20 +137,14 @@ line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 padding-bottom: 10px;
-
 color: #212121;
 }
 .soft p {
     margin: 0;
-    font-family: 'Roboto';
 font-style: normal;
-font-weight: 400;
 font-size: 14px;
-line-height: 24px;
-/* or 171% */
-
+line-height: 171%;
 letter-spacing: 0.03em;
-
 color: #757575;
 }
 .we-doing {
@@ -166,11 +158,10 @@ color: #757575;
  
 }
 .we-doing h2 {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 117%;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -190,34 +181,28 @@ flex-direction: column;
 align-items: center;
 }
 .comand h2 {
-font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 36px;
-line-height: 42px;
+line-height: 117%;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
 padding-top: 94px;
 }
 .photo-comand h3{
-    font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
-line-height: 19px;
-/* identical to box height */
+line-height: 119%;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
 }
 .photo-comand p{
-font-family: 'Roboto';
 font-style: normal;
-font-weight: 400;
 font-size: 16px;
-line-height: 19px;
-/* identical to box height */
+line-height: 119%;
 text-align: center;
 letter-spacing: 0.03em;
 color: #757575;
@@ -246,11 +231,10 @@ align-items: flex-start;
 object-fit: contain;
 }
 address {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 171%;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     display: flex;
@@ -260,22 +244,19 @@ address {
     margin-left: 215px;
 }
 address h4{
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 171%;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     margin: 0;
 }
-address>a{
-    font-family: 'Roboto';
+address a{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
-    /* or 171% */
+    line-height: 171%;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     padding: 8px;
@@ -290,7 +271,7 @@ address>a{
     padding-top: 60px;
     padding-left: 215px;
 }
-main {
+.services {
     width: 1240px;
     height: 1360px;
     background-color: #EEEEEE;
@@ -307,15 +288,14 @@ height: 54px;
 display: flex;
 justify-content: space-between;
 }
-.buttons li>a{
+.sorting {
     background-color: #F5F4FA;
     border-radius: 4px;
     border: 0;
-    font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
-line-height: 26px;
+line-height: 162%;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
@@ -323,6 +303,7 @@ padding:5px 22px 5px 22px;
 }
 .buttons li>a:hover {
     background-color: #2196F3;
+    color: #FFFFFF;
 }
 .projects {
     flex-direction: row;
@@ -330,7 +311,7 @@ padding:5px 22px 5px 22px;
     display: flex;
     flex-wrap: wrap;
 }
-.projects>li {
+.projects li{
     width: 370px;
     height: 404px;
     background-color:#FFFFFF;
@@ -338,23 +319,21 @@ padding:5px 22px 5px 22px;
     border-bottom: 1px;
     border-color: #757575;
 }
-.projects li>h3 {
-    font-family: 'Roboto';
+.name {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 200%;
     letter-spacing: 0.06em;
     color: #212121;
     margin: 0;
     margin-left: 15px;
 }
-.projects li>p {
-    font-family: 'Roboto';
+.description {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 188%;
     letter-spacing: 0.03em;
     color: #757575;
     margin-left:15px;
@@ -364,7 +343,7 @@ padding:5px 22px 5px 22px;
 font-style: normal;
 font-weight: 700;
 font-size: 26px;
-line-height: 31px;
+line-height: 120%;
 letter-spacing: 0.03em;
 color: #000000;
 width: 145px;
@@ -379,13 +358,15 @@ padding-left: 215px;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 120%;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     width: 145px;
     height: 31px;
     padding-left: 215px;
     padding-left: 215px;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 .logo-webstudio-2 span{
     color:#2196F3;
