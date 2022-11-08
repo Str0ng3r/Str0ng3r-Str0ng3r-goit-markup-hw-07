@@ -39,6 +39,12 @@ a {
 .links-hf:focus {
     color: #2196F3;
 }
+.current {
+    color: #2196F3;
+}
+.links-hf:active {
+    color: #2196F3;
+}
 .button-hf:hover {
     background-color: #2196F3;
     color: #FFFFFF;
@@ -106,12 +112,16 @@ margin: 0;
     padding: 0;
 }
 .mail {
+    padding: 15px 0;
     display: flex;
     color: #757575;
 }
-.tel {
-    display: flex;
+.link-child-tel {
     margin-left: 50px;
+}
+.tel {
+    padding: 15px 0;
+    display: flex;
     color: #757575;
 }
 .main-button {
@@ -122,8 +132,7 @@ margin: 0;
     background-color: #2F303A;
     flex-direction: column;
     width: 100%;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 200px 0;
 }
 .container-button button {
     border-radius: 4px;
@@ -131,6 +140,7 @@ margin: 0;
     width: 216px;
     height: 50px;
     border: 0;
+    margin: 0 auto;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -152,6 +162,7 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #FFFFFF;
 margin-top: 0;
+margin-bottom: 50px;
 }
 .cont-about {
 display: flex;
@@ -167,20 +178,11 @@ width: 100%;
     margin-top: 102px;
 }
 .soft {
-    height: 100px;
-    width: 1170px;
+    gap: 30px;
     display:flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items:flex-start;
-    justify-content: space-evenly;
     padding: 0;
-    margin-bottom: 94px;
 }
 .soft li{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
 width: 270px;
 }
 .about-soft-li h3{
@@ -231,11 +233,7 @@ color: #757575;
     gap: 30px;
 }
 .comand {
-height: 648px;
 background: #F5F4FA;
-display: flex;
-flex-direction: column;
-align-items: center;
 }
 .container-comand h2 {
 font-style: normal;
@@ -276,11 +274,8 @@ color: #757575;
     gap: 30px;
 }
 .footer {
-height: 252px;
 background-color:#2F303A;
-flex-direction: column;
-display: flex;
-align-items: flex-start;
+padding: 60px 0;
 }
 .logo-footer {
 object-fit: contain;
@@ -358,8 +353,7 @@ margin-bottom:50px;
 cursor: pointer;
 }
 .projects {
-    flex-direction: row;
-  gap: 30px;
+    gap: 30px;
     display: flex;
     margin: 0;
     flex-wrap: wrap;
@@ -368,18 +362,19 @@ cursor: pointer;
 .projects li{
     width: 370px;
     background-color:#FFFFFF;
-    border-bottom:solid 1px #EEEEEE;
-    border-left: solid 1px #EEEEEE;
-    border-right: solid 1px #EEEEEE;
+}
+.projects li>img {
+    width:100% ;
+    height: auto;
 }
 .name {
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 200%;
     letter-spacing: 0.06em;
     color: #212121;
-    margin: 0;
-    margin-left: 15px;
 }
 .description {
     font-style: normal;
@@ -407,15 +402,13 @@ height: 31px;
 }
 .logo-webstudio-2 {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 120%;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     width: 145px;
-    height: 31px;
-    margin-top: 60px;
+    display: block;
     margin-bottom: 20px;
 }
 .logo-webstudio-2 span{
@@ -426,21 +419,17 @@ height: 31px;
 }
 .container-projects {
     width: 1200px;
-    display: flex;
-    flex-direction: column;
     margin:0 auto;
+    padding: 0 15px;
 }
 .container-footer {
     width: 1200px;
-    margin: auto;
+    margin:0 auto;
+    padding:0 15px;
 }
 .container-button {
     width: 1200px;
     margin:0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 200px 0;
 }
 .container-we-doing {
     width: 1200px;
@@ -449,9 +438,8 @@ height: 31px;
 }
 .container-comand {
     width: 1200px;
-    margin: auto;
-    flex-direction: column;
-    display: flex;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 .harakter {
     padding: 30px 32px;
@@ -460,10 +448,20 @@ height: 31px;
     margin-bottom:10px ;
 }
 .direction-img {
+    border-bottom:solid 1px #EEEEEE;
+    border-left: solid 1px #EEEEEE;
+    border-right: solid 1px #EEEEEE;
     padding: 20px 24px;
 }
 .direction-img h2 {
     margin: 0;
 } .direction-img p {
 margin: 0;
+}
+.box-img {
+    width: 100%;
+    height: auto;
+}
+.non-top-padding {
+    padding-top: 0;
 }
