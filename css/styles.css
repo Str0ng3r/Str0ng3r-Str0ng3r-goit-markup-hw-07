@@ -130,7 +130,9 @@ margin: 0;
     height: 600px;
     justify-content: center;
     align-items: center;
-    background-color: #2F303A;
+    background-image: url("/images/Img-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     flex-direction: column;
     width: 100%;
     padding: 200px 0;
@@ -264,10 +266,6 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #757575;
 }
-.photo-comand li{
-    width: 270px;
-    background-color:#FFFFFF;
-}
 .photo-comand {
     display: flex;
     margin: 0;
@@ -360,7 +358,7 @@ cursor: pointer;
     flex-wrap: wrap;
     padding: 0;
 }
-.projects li{
+.comand-li {
     width: 370px;
     background-color:#FFFFFF;
 }
@@ -443,7 +441,7 @@ height: 31px;
     padding: 0 15px;
 }
 .harakter {
-    padding: 30px 32px;
+    padding:30px 70px 16px 70px;
 }
 .harakter h3 {
     margin-bottom:10px ;
@@ -479,4 +477,92 @@ margin: 0;
 }
 .mail:hover .svg-img-header-1{
     fill: #2196F3;
+}
+.links-on-social {
+    width: 206px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin: 0 auto;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.barbers-soc-link:hover {
+    background-color: #2196F3
+}
+.barbers-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contacts-soc-item {
+    width: 44px;
+    height: 44px;
+}
+.icon-svg-social {
+    fill: #757575;
+}
+.barbers-soc-link:hover .icon-svg-social{
+    fill: #FFFFFF;
+}
+.back-for-svg {
+    margin-bottom:30px;
+    background-color: #F5F4FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+}
+.container-regular-customers {
+    display: flex;
+    flex-direction: column;
+    width: 1300px;
+    margin: 0 auto;
+}
+.list-svg-costumers {
+    width: 1170px;
+    height: 92px;
+    gap: 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-top: 50px;
+}
+.list-svg-costumers li {
+    width: 170px;
+    height: 92px;
+}
+.container-regular-customers h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.svg-regular-costumers {
+fill: #AFB1B8;
+}
+.li-svg-costumers {
+    border: 2px #AFB1B8 solid;
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.li-svg-costumers:hover .svg-regular-costumers {
+    fill: #2196F3;
+}
+.li-svg-costumers:hover {
+    border-color: #2196F3;
 }
