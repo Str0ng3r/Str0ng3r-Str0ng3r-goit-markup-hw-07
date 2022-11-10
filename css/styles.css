@@ -112,6 +112,7 @@ margin: 0;
     padding: 0;
 }
 .mail {
+    align-items: center;
     padding: 15px 0;
     display: flex;
     color: #757575;
@@ -464,4 +465,18 @@ margin: 0;
 }
 .non-top-padding {
     padding-top: 0;
+}
+.svg-img-header-1 {
+    fill:#757575 ;
+    margin-right: 10px;
+}
+.svg-img-header {
+    fill: #757575;
+    margin-right: 10px;
+}
+.tel:hover .svg-img-header {
+    fill: #2196F3;
+}
+.mail:hover .svg-img-header-1{
+    fill: #2196F3;
 }
