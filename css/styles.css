@@ -57,15 +57,14 @@ a {
 .container {
     width: 1200px;
     margin: auto;
-align-items: center;
+}
+.wrap-footer {
+    align-items: center;
     display: flex;
 }
-.container-header {
-    width: 1200px;
-    margin:0 auto;
+.header-cont-center{
 align-items: center;
     display: flex;
-    padding: 0 15px;
 }
 section {
     padding-top: 94px;
@@ -140,7 +139,7 @@ padding: 0;
     margin-left: auto;
     margin-right: auto;
 }
-.container-button button {
+.main-cont-button button {
     border-radius: 4px;
     background-color:#2196F3;
     width: 216px;
@@ -157,7 +156,7 @@ padding: 0;
     justify-content: center;
     cursor: pointer;
 }
-.container-button h1 {
+.main-cont-button h1 {
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 900;
@@ -241,7 +240,7 @@ color: #757575;
 .comand {
 background: #F5F4FA;
 }
-.container-comand h2 {
+.container h2 {
 font-style: normal;
 font-weight: 700;
 font-size: 36px;
@@ -423,15 +422,6 @@ height: 31px;
     margin:0 auto;
     padding: 0 15px;
 }
-.container-button {
-    width: 1200px;
-    margin:0 auto;
-}
-.container-we-doing {
-    width: 1200px;
-    margin:0 auto;
-    padding: 0 15px;
-}
 .container-comand {
     width: 1200px;
     margin: 0 auto;
@@ -540,7 +530,7 @@ padding-top: 16px;
     width: 170px;
     height: 92px;
 }
-.container-regular-customers h2 {
+.regular-cont-costumers h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
