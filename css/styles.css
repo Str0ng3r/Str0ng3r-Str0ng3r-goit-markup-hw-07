@@ -92,12 +92,13 @@ margin-left: 215px;
 ul{
 list-style-type: none;
 margin: 0;
+padding: 0;
 }
 .links {
     display: flex;
     align-items: center;
     justify-content:center;
-    margin-left: 344px;
+    margin-left: auto;
     padding: 0;
 }
 .nav {
@@ -107,9 +108,8 @@ margin: 0;
 }
 .navig {
     display: flex;
-    justify-content: space-around;
+    gap: 50px;
     color: #212121;
-    padding: 0;
 }
 .mail {
     align-items: center;
@@ -118,7 +118,7 @@ margin: 0;
     color: #757575;
 }
 .link-child-tel {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 .tel {
     padding: 15px 0;
@@ -130,12 +130,15 @@ margin: 0;
     height: 600px;
     justify-content: center;
     align-items: center;
+    background-color: rgba(47, 48, 58, 0.4);
     background-image: url("/images/Img-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
-    width: 100%;
+    max-width: 1600px;
     padding: 200px 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 .container-button button {
     border-radius: 4px;
@@ -311,8 +314,8 @@ object-fit: contain;
     color: #FFFFFF;
 }
 .cardt{
-    width: 270px;
-    height: 260px;
+    max-width: 100%;
+    height: auto;
 }
 .logotip {
     width: 145px;
@@ -359,7 +362,6 @@ cursor: pointer;
     padding: 0;
 }
 .comand-li {
-    width: 370px;
     background-color:#FFFFFF;
 }
 .projects li>img {
@@ -436,7 +438,7 @@ height: 31px;
     padding: 0 15px;
 }
 .harakter {
-    padding:30px 70px 16px 70px;
+    margin: 30px 0 30px 0;
 }
 .harakter h3 {
     margin-bottom:10px ;
@@ -474,16 +476,15 @@ margin: 0;
     fill: #2196F3;
 }
 .links-on-social {
-    width: 206px;
-    height: 44px;
+justify-content: center;
     display: flex;
-    justify-content: space-between;
-    padding-left: 0;
-    margin: 0 auto;
     gap: 10px;
-    margin-bottom: 30px;
+padding-top: 16px;
 }
 .barbers-soc-link:hover {
+    background-color: #2196F3
+}
+.barbers-soc-link:focus {
     background-color: #2196F3
 }
 .barbers-soc-link {
@@ -500,10 +501,19 @@ margin: 0;
     height: 44px;
 }
 .icon-svg-social {
-    fill: #757575;
+    fill: #AFB1B8;
 }
 .barbers-soc-link:hover .icon-svg-social{
     fill: #FFFFFF;
+}
+.barbers-soc-link:focus .icon-svg-social{
+    fill: #FFFFFF;
+}
+.box-shadow-hf:focus .cont-img-direct{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.box-shadow-hf:hover .cont-img-direct{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .back-for-svg {
     margin-bottom:30px;
@@ -515,12 +525,7 @@ margin: 0;
     height: 120px;
     border-radius: 4px;
 }
-.container-regular-customers {
-    display: flex;
-    flex-direction: column;
-    width: 1300px;
-    margin: 0 auto;
-}
+
 .list-svg-costumers {
     width: 1170px;
     height: 92px;
@@ -548,17 +553,24 @@ margin: 0;
 .svg-regular-costumers {
 fill: #AFB1B8;
 }
-.li-svg-costumers {
-    border: 2px #AFB1B8 solid;
+.link-svg-regular-costumers {
+    border: 1px #AFB1B8 solid;
 border-radius: 4px;
 display: flex;
 align-items: center;
 justify-content: center;
+height: 92px;
 }
-.li-svg-costumers:hover .svg-regular-costumers {
+.link-svg-regular-costumers:hover .svg-regular-costumers {
     fill: #2196F3;
 }
-.li-svg-costumers:hover {
+.link-svg-regular-costumers:hover {
+    border-color: #2196F3;
+}
+.link-svg-regular-costumers:focus .svg-regular-costumers {
+    fill: #2196F3;
+}
+.link-svg-regular-costumers:focus {
     border-color: #2196F3;
 }
 .cont-footer-svg {
@@ -572,7 +584,7 @@ justify-content: center;
 .barbers-soc-link-footer {
     width: 100%;
     height: 100%;
-    background-color: #55565E;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -588,7 +600,10 @@ justify-content: center;
 .barbers-soc-link-footer:hover {
     background-color: #2196F3;
 }
-.footer-svg-social h4{
+.barbers-soc-link-footer:focus {
+    background-color: #2196F3;
+}
+.footer-svg-social p{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -600,13 +615,5 @@ justify-content: center;
     margin-bottom: 20px;
 }
 .footer-svg-social {
-    width: 206px;
-    margin-top: 15px;
     margin-left: 70px;
-}
-.container-wrap-footer {
-    display: flex;
-    flex-direction: row;
-    width: 1200px;
-    margin: 0 auto;
 }
