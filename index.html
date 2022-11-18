@@ -39,9 +39,12 @@ info@devstudio.com</a></li>
 </div>
     </header>
 <section class="main-button">
+    <div class="modal-background is-hidden" data-modal><div class="modal-window is-hidden"><svg width="30px" height="30px" class="cross" data-modal-close>
+        <use href="./images/icons.svg#icon-close-black"></use>
+    </svg></div></div>
     <div class="container main-cont-button">
 <h1>Ефективні рішення для<br>вашого бізнесу</h1>
-<button type="button">Замовити послугу</button>
+<button type="button" data-modal-open>Замовити послугу</button>
 </div>
 </section>
 <section class="cont-about">
@@ -286,5 +289,6 @@ info@devstudio.com</a></li>
     </div>
 </div>
 </footer>
+<script src="./JS/modal.js"></script>
 </body>
 </html>
