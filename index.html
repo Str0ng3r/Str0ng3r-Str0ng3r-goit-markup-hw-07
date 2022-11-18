@@ -39,9 +39,15 @@ info@devstudio.com</a></li>
 </div>
     </header>
 <section class="main-button">
-    <div class="modal-background is-hidden" data-modal><div class="modal-window is-hidden"><svg width="30px" height="30px" class="cross" data-modal-close>
-        <use href="./images/icons.svg#icon-close-black"></use>
-    </svg></div></div>
+    <div data-modal class="backdrop is-hidden">
+        <form action="#" class="modal-form">
+          <button data-modal-close type="button" class="close-btn-icon">
+                <svg width="18px" height="18px"> 
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>  
+            </button>
+        </form>
+    </div> 
     <div class="container main-cont-button">
 <h1>Ефективні рішення для<br>вашого бізнесу</h1>
 <button type="button" data-modal-open>Замовити послугу</button>
