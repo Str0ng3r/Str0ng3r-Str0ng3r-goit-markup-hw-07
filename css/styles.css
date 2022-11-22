@@ -728,6 +728,7 @@ padding: 63px 24px 63px 24px;
   background-color: var(--secondary-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition:border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form p {
     font-style: normal;
@@ -748,10 +749,69 @@ padding: 63px 24px 63px 24px;
     margin: 0 auto;
     margin-bottom: 12px;
 }
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.close-btn-icon:hover .cross-btn {
+    fill: #2196F3;
+}
+.close-btn-icon:focus{
+    border-color: #2196F3;
+}
+.close-btn-icon:focus .cross-btn {
+fill: #2196F3;
+}
+.close-btn-icon:hover {
+    border-color: #2196F3;
+}
+.cross-btn {
+    transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .labels {
-    margin-bottom: 10px;
-    width: 448px;
-    height: 40px;
     border-radius: 4px;
-
+    border:1px solid rgba(33, 33, 33, 0.2);
+    margin-bottom: 0;
+    padding: 0;
+    padding-left: 42px;
+    width:448px;
+    height: 40px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.person-icon {
+    position: absolute;
+    left: 12px;
+    top: 11px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.comments-area {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+.comments-area:hover {
+    border-color: #2196F3;
+}
+.comments-area:focus {
+    outline: 0;
+    outline-offset: 0;
+    border-color: #2196F3;
+}
+.cont-form-label {
+    position: relative;
+    margin-bottom: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cont-form-label:hover .person-icon {
+    fill:#2196F3;
+}
+.labels:focus .person-icon {
+    fill:#2196F3;
+}
+.cont-form-label:hover .labels {
+    border:1px solid#2196F3;
+}
+.cont-form-label:focus .labels {
+    border:1px solid#2196F3;
 }

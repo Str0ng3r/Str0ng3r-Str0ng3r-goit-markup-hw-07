@@ -42,19 +42,33 @@ info@devstudio.com</a></li>
     <div data-modal class="backdrop is-hidden">
         <form action="#" class="modal-form">
           <button data-modal-close type="button" class="close-btn-icon">
-                <svg width="18px" height="18px"> 
+                <svg class="cross-btn" class="person-icon" width="18px" height="18px"> 
                     <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>  
             </button>
             <h3>Залиште свої дані, ми вам передзвонимо</h3>
             <p>Ім'я</p>
-            <label  for=""><input class="labels" type="text"></label>
+            <div class="cont-form-label">
+            <label for="">
+                <svg width="18px" height="18px" class="person-icon">
+                    <use href="./images/icons.svg#icon-person-black-18dp"></use>
+                </svg>
+                <input class="labels" name="people-name" type="text"></label></div>
             <p>Телефон</p>
-            <label  for=""><input class="labels" type="tel"></label>
+            <div class="cont-form-label">
+            <label for=""> <svg width="18px" height="18px" class="person-icon">
+                <use href="./images/icons.svg#icon-phone-black-18dp"></use>
+            </svg>
+            <input class="labels" name="number" type="tel"></label></div>
             <p>Пошта</p>
-            <label  for=""><input class="labels" type="email"></label>
+            <div class="cont-form-label">
+            <label for=""> <svg width="18px" height="18px" class="person-icon">
+                <use href="./images/icons.svg#icon-email-black-18dp"></use>
+            </svg>
+            <input class="labels" name="gmail" type="email"></label></div>
             <p>Коментар</p>
-            <textarea name="" id="comments" cols="30" rows="10"></textarea>
+            <textarea name="comment" id="comments" cols="30"
+            class="comments-area" placeholder="Введіть текст" rows="10"></textarea>
         </form>
     </div> 
     <div class="container main-cont-button">
