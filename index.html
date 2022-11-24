@@ -49,24 +49,39 @@ info@devstudio.com</a></li>
             <h3>Залиште свої дані, ми вам передзвонимо</h3>
             <p>Ім'я</p>
             <div class="cont-form-label">
+            <label for="people-name">
+                <input class="label-input" name="people-name" type="text">
                 <svg width="18px" height="18px" class="icon-form">
                     <use href="./images/icons.svg#icon-person-black-18dp"></use>
                 </svg>
-                <input class="label-input" name="people-name" type="text"></div>
+                </label></div>
             <p>Телефон</p>
-            <div class="cont-form-label"> <svg class="icon-form" width="18px" height="18px" >
+            <div class="cont-form-label">
+            <label for="number">
+                <input class="label-input" maxlength="13" name="number" type="tel">
+                <svg class="icon-form" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-phone-black-18dp"></use>
             </svg>
-            <input class="label-input" name="number" type="tel"></div>
+
+        </label>
+    </div>
             <p>Пошта</p>
             <div class="cont-form-label">
+            <label for="gmail">
+                <input class="label-input" name="gmail" type="email">
             <svg width="18px" height="18px" class="icon-form">
                 <use href="./images/icons.svg#icon-email-black-18dp"></use>
             </svg>
-            <input class="label-input" name="gmail" type="email"></div>
+            </label>
+        </div>
             <p>Коментар</p>
             <textarea name="comment" id="comments" cols="30"
             class="comments-area" placeholder="Введіть текст" rows="10"></textarea>
+            <div class="accept-list">
+                <input class="yes-value" type="checkbox" name="accept" value="yes" required>
+                <p>Погоджуюся з розсилкою та приймаю <a class="link-accept" href="#">Умови договору</a></p>
+            </div>
+            <button class="form-button-accept" type="submit">Відправити</button>
         </form>
     </div> 
     <div class="container main-cont-button">
